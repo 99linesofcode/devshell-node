@@ -61,11 +61,13 @@
         {
           default = mkShell {
             packages = [
+              actionlint
+              eslint
               nodejs_22
               pnpm
-              typescript
-              eslint
               prettier
+              shellcheck
+              typescript
             ];
 
             shellHook = ''
